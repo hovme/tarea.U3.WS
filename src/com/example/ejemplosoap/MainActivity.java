@@ -41,7 +41,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         //Se traen el campo desde el layout
         et = (EditText) findViewById(R.id.editText1);
-        
+        // se trae el control spinner desde el layout
         sp = (Spinner)findViewById(R.id.spTipo);
         
 		// se declara un arreglo con los valores a elejir
@@ -52,13 +52,13 @@ public class MainActivity extends Activity {
 		sp.setAdapter(adapter);
         
         
-        //Fahrenheit Text control
+        //Se trae el control de texto
         tv = (TextView) findViewById(R.id.tv_result);
-        //Button to trigger web service invocation
+        //SE trae el boton desde el alyout
         b = (Button) findViewById(R.id.button1);
-        //Button Click Listener
-        
-        
+       
+        // se asigna el listener del boton
+       
         b.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
             	            	
